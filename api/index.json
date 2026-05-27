@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-05-21T11:26:54Z",
+  "latest_critical": [
+    {
+      "cve_id": "CVE-2026-7538",
+      "cvss_score": 8.9,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-7546",
+      "cvss_score": 8.9,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-7548",
+      "cvss_score": 7.4,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-42994",
+      "cvss_score": 8.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-42996",
+      "cvss_score": 10.0,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "CRITICAL"
+    },
+    {
+      "cve_id": "CVE-2026-7584",
+      "cvss_score": 8.4,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-42402",
+      "cvss_score": 7.5,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-42403",
+      "cvss_score": 7.5,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-43001",
+      "cvss_score": 7.9,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-43003",
+      "cvss_score": 8.0,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-7567",
+      "cvss_score": 9.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "CRITICAL"
+    },
+    {
+      "cve_id": "CVE-2026-42778",
+      "cvss_score": 9.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "CRITICAL"
+    },
+    {
+      "cve_id": "CVE-2026-42779",
+      "cvss_score": 9.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "CRITICAL"
+    },
+    {
+      "cve_id": "CVE-2026-3772",
+      "cvss_score": 8.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-31694",
+      "cvss_score": 7.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-31695",
+      "cvss_score": 7.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-31696",
+      "cvss_score": 7.8,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-31697",
+      "cvss_score": 7.1,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-31698",
+      "cvss_score": 7.1,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    },
+    {
+      "cve_id": "CVE-2026-31699",
+      "cvss_score": 7.1,
+      "has_kev": false,
+      "poc_count": 0,
+      "published_at": "2026-05-01",
+      "severity": "HIGH"
+    }
+  ],
+  "schema_version": 1,
+  "sources": [
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "nvd",
+      "ok": true,
+      "rate_limit": {
+        "remaining": null,
+        "reset": null
+      },
+      "record_count": 2000
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "cvelist_v5",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 2000
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "cisa_kev",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 1599
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "first_epss",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 1566
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "github",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 0
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:41Z",
+      "name": "local_snapshots",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 2003
+    }
+  ],
+  "timeline_metrics": {
+    "exploitation_lag_median_days": 5.0,
+    "exploitation_lag_p90_days": 8.2,
+    "poc_lag_median_days": 0.0,
+    "poc_lag_p90_days": 0.0
+  },
+  "totals": {
+    "critical_cves": 175,
+    "cves": 2003,
+    "cves_in_kev": 2,
+    "cves_with_high_confidence_poc": 1,
+    "latest_public_pocs": 36
+  },
+  "warning": "External PoC links are untrusted public GitHub repositories. This project stores metadata only, does not mirror code, and does not validate that linked repositories are safe to execute."
+}

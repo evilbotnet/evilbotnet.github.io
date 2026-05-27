@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PoC Timeline Index",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "totals", "timeline_metrics", "sources", "warning"],
+  "properties": {
+    "schema_version": { "type": "integer" },
+    "generated_at": { "type": ["string", "null"] },
+    "warning": { "type": "string" },
+    "totals": {
+      "type": "object",
+      "required": [
+        "cves",
+        "cves_with_high_confidence_poc",
+        "cves_in_kev",
+        "critical_cves",
+        "latest_public_pocs"
+      ],
+      "properties": {
+        "cves": { "type": "integer" },
+        "cves_with_high_confidence_poc": { "type": "integer" },
+        "cves_in_kev": { "type": "integer" },
+        "critical_cves": { "type": "integer" },
+        "latest_public_pocs": { "type": "integer" }
+      }
+    },
+    "timeline_metrics": { "type": "object" },
+    "sources": { "type": "array" },
+    "latest_critical": { "type": "array" }
+  }
+}
+

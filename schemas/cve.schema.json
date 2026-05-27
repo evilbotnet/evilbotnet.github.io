@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PoC Timeline CVE Detail",
+  "type": "object",
+  "required": ["schema_version", "cve_id", "pocs", "timeline", "sources"],
+  "properties": {
+    "schema_version": { "type": "integer" },
+    "cve_id": { "type": "string", "pattern": "^CVE-[0-9]{4}-[0-9]{4,}$" },
+    "published_at": { "type": ["string", "null"] },
+    "last_modified_at": { "type": ["string", "null"] },
+    "description": { "type": "string" },
+    "severity": { "type": ["string", "null"] },
+    "cvss_score": { "type": ["number", "null"] },
+    "cvss_vector": { "type": ["string", "null"] },
+    "cwes": { "type": "array", "items": { "type": "string" } },
+    "affected": { "type": "array" },
+    "references": { "type": "array" },
+    "epss": { "type": ["object", "null"] },
+    "kev": { "type": ["object", "null"] },
+    "exploitation_signals": { "type": "array" },
+    "pocs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["repo_full_name", "repo_url", "confidence_score", "confidence_tier", "warning"],
+        "properties": {
+          "repo_full_name": { "type": "string" },
+          "repo_url": { "type": "string" },
+          "confidence_score": { "type": "number" },
+          "confidence_tier": { "enum": ["high", "medium", "low"] },
+          "warning": { "type": "string" }
+        }
+      }
+    },
+    "timeline": { "type": "object" },
+    "sources": { "type": "array", "items": { "type": "string" } }
+  }
+}
+

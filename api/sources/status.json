@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-05-21T11:26:54Z",
+  "sources": [
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "nvd",
+      "ok": true,
+      "rate_limit": {
+        "remaining": null,
+        "reset": null
+      },
+      "record_count": 2000
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "cvelist_v5",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 2000
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "cisa_kev",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 1599
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "first_epss",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 1566
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:54Z",
+      "name": "github",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 0
+    },
+    {
+      "error_count": 0,
+      "errors": [],
+      "fetched_at": "2026-05-21T11:26:41Z",
+      "name": "local_snapshots",
+      "ok": true,
+      "rate_limit": {},
+      "record_count": 2003
+    }
+  ]
+}

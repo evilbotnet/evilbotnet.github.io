@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CVE to PoC Timeline</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>CVE to PoC Timeline</h1>
+        <p id="generatedAt">Loading public metadata...</p>
+      </div>
+      <nav class="tabs" aria-label="Dashboard views">
+        <button class="tab active" type="button" data-view="leadership">Leadership</button>
+        <button class="tab" type="button" data-view="research">Research</button>
+        <button class="tab" type="button" data-view="sources">Sources</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="warning" class="warning" role="note"></section>
+
+      <section id="leadership" class="view active">
+        <div class="metrics" id="metrics"></div>
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Timeline Metrics</h2>
+          </div>
+          <div class="timeline-grid" id="timelineGrid"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Newest Critical And High CVEs</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>CVE</th>
+                  <th>Published</th>
+                  <th>Severity</th>
+                  <th>CVSS</th>
+                  <th>PoCs</th>
+                  <th>KEV</th>
+                </tr>
+              </thead>
+              <tbody id="criticalRows"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section id="research" class="view">
+        <section class="filters" aria-label="Research filters">
+          <label>
+            Search
+            <input id="searchInput" type="search" placeholder="CVE, vendor, product, repo" />
+          </label>
+          <label>
+            Severity
+            <select id="severityFilter">
+              <option value="">Any</option>
+              <option>CRITICAL</option>
+              <option>HIGH</option>
+              <option>MEDIUM</option>
+              <option>LOW</option>
+            </select>
+          </label>
+          <label>
+            KEV
+            <select id="kevFilter">
+              <option value="">Any</option>
+              <option value="yes">In KEV</option>
+              <option value="no">Not in KEV</option>
+            </select>
+          </label>
+          <label>
+            Minimum Tier
+            <select id="tierFilter">
+              <option value="">Any</option>
+              <option value="high">High</option>
+              <option value="medium">Medium+</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="panel split">
+          <div>
+            <div class="panel-heading">
+              <h2>CVE Research Queue</h2>
+              <span id="resultCount"></span>
+            </div>
+            <div class="table-wrap research-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>CVE</th>
+                    <th>Published</th>
+                    <th>Severity</th>
+                    <th>EPSS</th>
+                    <th>PoCs</th>
+                    <th>PoC Lag</th>
+                    <th>Exploit Lag</th>
+                  </tr>
+                </thead>
+                <tbody id="researchRows"></tbody>
+              </table>
+            </div>
+          </div>
+          <aside class="detail" id="detailPanel">
+            <h2>CVE Detail</h2>
+            <p>Select a row to inspect timeline, enrichment, and candidate PoC links.</p>
+          </aside>
+        </section>
+      </section>
+
+      <section id="sources" class="view">
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Source Freshness</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>Status</th>
+                  <th>Fetched</th>
+                  <th>Records</th>
+                  <th>Errors</th>
+                </tr>
+              </thead>
+              <tbody id="sourceRows"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="assets/app.js" type="module"></script>
+  </body>
+</html>
+
